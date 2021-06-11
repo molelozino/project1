@@ -9,3 +9,5 @@ const config = {
   };
   
   export default config;
+
+//  mongodb+srv://precious:precious111@cluster0.0hrx9.mongodb.net/godaddyproject?retryWrites=true&w=majority
