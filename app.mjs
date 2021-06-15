@@ -24,7 +24,12 @@ import { router as adminRouter } from './routes/admin.mjs';
 
 // Connection URL
 mongoose.Promise = global.Promise;
-mongoose.connect(config.mongoUri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect(config.mongoUri, { 
+  useNewUrlParser: true,
+   useCreateIndex: true,
+    useUnifiedTopology: true,
+     useFindAndModify: false,
+     autoIndex: true });
 mongoose.connection.on('error', () => {
   console.log(`unable to connect to database: ${config.mongoUri}`);
 });

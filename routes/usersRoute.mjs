@@ -4,6 +4,9 @@ import errorHandler from '../helpers/dbErrorHandler.mjs';
 
 export const router = express.Router();
 /* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('signin',{email:req.params.email,title:'Sign In'});
+});
 router.get('/:email', function(req, res, next) {
   res.render('signin',{email:req.params.email,title:'Sign In'});
 });
