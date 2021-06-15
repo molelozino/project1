@@ -63,7 +63,10 @@
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label for="">Email</label><span class="text-danger">*</span>
+                                    {{#if email}}
                                   <input type="email" value={{email}} class="form-control mb-4 py-2 rounded-0 border bg-white border-1" id="email" name="email" required >
+                                  {{/if}}
+                                  <input type="email" class="form-control mb-4 py-2 rounded-0 border bg-white border-1" id="email" name="email" required >
                                 </div>
                               </div>
                             <div class="form-row">

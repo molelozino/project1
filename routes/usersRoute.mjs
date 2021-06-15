@@ -17,6 +17,7 @@ router.post('/', function(req, res) {
   user.save(function (err, user) {
     if (err){
       console.log(err);
+      console.log(errorHandler.getErrorMessage(err));
     res.render('signin', {
       error: errorHandler.getErrorMessage(err)
      });
