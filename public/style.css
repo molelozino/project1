@@ -8,8 +8,7 @@
   }
   @font-face {
     font-family: gdsherpa;
-    src: url(./font/gdsherpa-vf.woff2) format("woff2")
-    ;
+    src: url(./font/gdsherpa-vf.woff2) format("woff2");
     font-weight: 300 700;
     font-display: swap;
   }
