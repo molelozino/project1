@@ -7,6 +7,9 @@ import * as http from 'http';
 import { approotdir } from './approotdir.mjs';
 import mongoose from 'mongoose';
 import moment from 'moment';
+import dotenv from 'dotenv';
+
+dotenv.config()
 
 
 
@@ -29,7 +32,7 @@ mongoose.connect(config.mongoUri, {
    useCreateIndex: true,
     useUnifiedTopology: true,
      useFindAndModify: false,
-     autoIndex: true });
+     autoIndex: true }).catch(err=>console.log(err))
 mongoose.connection.on('error', () => {
   console.log(`unable to connect to database: ${config.mongoUri}`);
 });
